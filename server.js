@@ -11,7 +11,7 @@ app.use(cors()); // <-- Ajoutez cette ligne APRÈS 'const app = express();'
 
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/gestionDB')
+mongoose.connect('process.env.MongoUIR')
     .then(() => console.log('Connecté à MongoDB !'))
     .catch(err => console.error('Erreur de connexion à MongoDB :', err));
 
